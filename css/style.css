@@ -508,6 +508,7 @@ body {
     border: none;
     background: transparent;
     border-radius: 50%;
+    fill: #fff;
 }
 .icon-Ellipse:hover{
     fill: #404BBF;
