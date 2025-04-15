@@ -492,12 +492,13 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(46, 47, 66, 0.40);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: fixed;
     top: 0;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .is-open{
     opacity: 1;
@@ -531,14 +532,14 @@ body {
     top: 24px;
     right: 24px;
     cursor: pointer;
-    
+    background-color: #e7e9fc;
     fill: #fff;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal-close-btn:hover,
   .modal-close-btn:focus {
     background-color: #404bbf;
+    border: none;
   }
   .icon-close-btn {
     fill: #2E2F42;
@@ -547,7 +548,10 @@ body {
   .modal-close-btn:hover .icon-close-btn {
     fill: #FFFFFF;
   }
-
+  .icon-close-btn:hover,
+  .icon-close-btn:focus {
+    fill: #FFFFFF;
+  }
   
 .modal-text{
     color: var(--NAVY-BLUE, #2E2F42);
@@ -559,7 +563,7 @@ body {
     margin-bottom: 16px;
 }
 .modal-field{
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 .modal-input{
     border-radius: 4px;
@@ -597,7 +601,7 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     left: 16px;
     top: 50%;
-    transform: translateY(-65%);
+    transform: translateY(-50%);
 }
 .modal-footer-btn{
     display: block;
@@ -635,6 +639,7 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     border-color: #4D5AE5;
     border: 1px solid rgba(46, 47, 66, 0.4);
+    border-color: #4D5AE5
 }
 .modal-check-text{
     letter-spacing: 0.48px;
@@ -644,7 +649,7 @@ body {
     text-align: center;
     padding-bottom: 24px;
     line-height: 1.17;
-    
+
 }
 .modal-checkbox{
     width: 16px;
