@@ -467,7 +467,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
 }
-.icon-right-Frame{
+.icon-right-frame{
     fill: #fff;
     margin-left: 16px;
 }
@@ -611,11 +611,18 @@ body {
 .modal-footer-btn{
     display: block;
     margin: 0 auto;
-    color: #fff;
+    color: #ffffff;
     background: #4D5AE5;
     text-align: center;
     border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 169px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
