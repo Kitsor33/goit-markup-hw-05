@@ -433,25 +433,25 @@ body {
 .footer-div{
     display: flex;
     align-items: baseline;
-
 }
 .footer-rights{
-    padding-left:80px;
+    padding-left: 80px;
 }
-.footer-form{
+.footer-rights-form{
     display: flex;
+    gap: 24px;
 }
 .footer-rights-txt{
     color: #fff;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    margin-bottom: 16px;            
+    margin-bottom: 16px;    
+    letter-spacing: 0.02em;        
 }
+
 .footer-rights-btn{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;    
     gap: 16px;
     color: #fff;
     background-color: #4D5AE5;
@@ -459,10 +459,13 @@ body {
     font-weight: 500;
     font-size: 16px;
     border-radius: 4px;
-    margin-left: 24px;
     border: none;
+    min-width: 165px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
 }
-.icon-Frame{
+.icon-right-Frame{
     fill: #fff;
 }
 .footer-input{
@@ -473,6 +476,13 @@ body {
     width: 264px;
     height: 40px;
     padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    pleaceholder{
+        color: #ffffff;
+    }
 }
 
 .backdrop{
@@ -513,11 +523,7 @@ body {
 .icon-Ellipse:hover{
     fill: #404BBF;
 }
-.modal-svg{
-    width: 24px;
-    height: 24px;
-    fill:#E7E9FC;
-}
+
 .icon-close-btn{
     position: absolute;
     top: 50%;
