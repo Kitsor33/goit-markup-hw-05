@@ -548,8 +548,8 @@ body {
   .modal-close-btn:hover .icon-close-btn {
     fill: #ffffff;
   }
-  .icon-close-btn:hover,
-  .icon-close-btn:focus {
+  .close-btn:hover,
+  .close-btn:focus {
     fill: #ffffff;
   }
   
@@ -563,7 +563,7 @@ body {
     margin-bottom: 16px;
 }
 .modal-field{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .modal-field-f{
     margin-bottom: 24px;
@@ -654,11 +654,12 @@ body {
 
 }
 .modal-checkbox{
+    display: inline-flex;
     width: 16px;
     height: 16px;
     flex-shrink: 0;
     margin-right: 8px;
-    display: inline-flex;
+
     justify-content:center ;
     align-items: center;
     fill: transparent;
